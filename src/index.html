@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>acidgreen Technical Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="main.css" />
+    <script src="components/AddToCartButton.js"></script>
+    <script src="components/CartDrawer.js"></script>
+    <script src="components/CartOpen.js"></script>
+  	<script src="https://cdn.tailwindcss.com" id="external-js"></script>
+</head>
+  <body>
+    <header>
+      <a href="/">
+        <img
+          src="https://acidgreen.com.au/static/logo_white-3281f1afc79c7c28e19b1e31aee24c9f.svg"
+          alt="acidgreen"
+        />
+      </a>
+      <cart-open>
+        <svg
+          width="20"
+          height="22"
+          viewBox="0 0 20 22"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M6.5 9C6.5 8.72386 6.27614 8.5 6 8.5C5.72386 8.5 5.5 8.72386 5.5 9C5.5 10.1935 5.97411 11.3381 6.81802 12.182C7.66193 13.0259 8.80653 13.5 10 13.5C11.1935 13.5 12.3381 13.0259 13.182 12.182C14.0259 11.3381 14.5 10.1935 14.5 9C14.5 8.72386 14.2761 8.5 14 8.5C13.7239 8.5 13.5 8.72386 13.5 9C13.5 9.92826 13.1313 10.8185 12.4749 11.4749C11.8185 12.1313 10.9283 12.5 10 12.5C9.07174 12.5 8.1815 12.1313 7.52513 11.4749C6.86875 10.8185 6.5 9.92826 6.5 9Z"
+            fill="white"
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M3.6 0.7C3.69443 0.574097 3.84262 0.5 4 0.5H16C16.1574 0.5 16.3056 0.574097 16.4 0.7L19.397 4.69595C19.4561 4.77304 19.4933 4.86785 19.4992 4.97104C19.4997 4.98066 19.5 4.99032 19.5 5V19C19.5 19.663 19.2366 20.2989 18.7678 20.7678C18.2989 21.2366 17.663 21.5 17 21.5H3C2.33696 21.5 1.70107 21.2366 1.23223 20.7678C0.763392 20.2989 0.5 19.663 0.5 19V5C0.5 4.88562 0.538407 4.78021 0.603027 4.69596L3.6 0.7ZM15.75 1.5L18 4.5H2L4.25 1.5H15.75ZM1.5 19V5.5H18.5V19C18.5 19.3978 18.342 19.7794 18.0607 20.0607C17.7794 20.342 17.3978 20.5 17 20.5H3C2.60218 20.5 2.22064 20.342 1.93934 20.0607C1.65804 19.7794 1.5 19.3978 1.5 19Z"
+            fill="white"
+          />
+        </svg>
+      </cart-open>
+    </header>
+
+    <cart-drawer>
+      <h2>
+        My Bag
+      </h2>
+      <!-- Render our products from the API here. -->
+      <ul class="items"></ul>
+    </cart-drawer>
+    <main>
+      <div class="container">
+        <div class="media">
+          <img
+            src="https://images.pexels.com/photos/335257/pexels-photo-335257.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Cool product"
+          />
+        </div>
+
+        <div class="content">
+          <div class="form">
+            <h3 data-title="Cool Product">Cool product</h3>
+            <span class="price" data-price="200">$200</span>
+
+            <p class="description">
+              Show off your modern bohemian side in our Rory Maxi Dress, she is
+              such a divine Little Party Dress. We are swooning over the
+              cascading boho tiers and delicate tassel ties. Just add strappy
+              sandals for an effortless ne...
+            </p>
+            <cart-button>ADD TO BAG</cart-button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "acidgreen-technical-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "express": "4.18.1",
+    "morgan": "1.10.0",
+    "nodemon": "2.0.19"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.21"
+  },
+  "keywords": [],
+  "description": ""
+}

@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  background: #000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+header a {
+  width: 120px;
+}
+
+cart-open {
+  cursor: pointer;
+}
+
+cart-open svg {
+  pointer-events: none;
+}
+
+cart-button {
+  cursor: pointer;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  width: 100%;
+  height: 43px;
+  /* Neutral / 100 */
+  background: #0a0a0a;
+  /* CTA Shadow */
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+  transition: opacity ease-in-out 0.3s;
+}
+
+cart-button:hover {
+  opacity: 0.8;
+}
+
+main {
+  max-width: 100%;
+}
+
+main .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.container .media,
+.container .content {
+  display: flex;
+  padding: 1rem;
+  flex-basis: 100%;
+}
+
+.media img {
+  max-width: 100%;
+  user-select: none;
+}
+
+main .container .content {
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.container .content .form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+
+.container .content .form > * {
+  margin-bottom: 1rem;
+}
+
+cart-drawer {
+  display: none;
+  z-index: 9;
+  border-left: 1px solid;
+}
+
+cart-drawer[open] {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50vw;
+  background: #fff;
+  height: 100vh;
+}
+
+cart-drawer button {
+  cursor: pointer;
+  background: none;
+  outline: none;
+  border: none;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+cart-drawer h2 {
+  padding: 1rem;
+}
+
+cart-drawer ul {
+  display: flex;
+  padding: 1rem;
+  list-style: none;
+  padding-top: 3rem;
+  flex-direction: column;
+  height: calc(100% - 8rem);
+  overflow-y: scroll;
+  border-top: 1px solid;
+}
+
+cart-drawer ul li {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid;
+}
+
+cart-drawer ul li > * {
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 500px) {
+  .container .media,
+  .container .content {
+    flex-basis: 50%;
+  }
+}
